@@ -1,7 +1,7 @@
+
+/* Global Styles */
 * {
-    font-family: 'Borel', cursive;
-    font-family: 'Handjet', cursive;
-    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -10,9 +10,9 @@ body {
     margin: 0;
     padding: 20px;
     background-color: #bbbbbb;
-
 }
 
+/* Header Styles */
 header {
     background-color: #203d7d;
     color: #fff;
@@ -20,6 +20,7 @@ header {
     opacity: 1;
 }
 
+/* Navigation Styles */
 nav {
     display: flex;
     justify-content: space-between;
@@ -57,7 +58,23 @@ nav a {
 nav a:hover {
     color: #348b47;
     text-decoration: underline;
+}
 
+/* Other Styles */
+h1 {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.logo {
+    color: #348b47;
 }
 
 h1 {
@@ -326,6 +343,58 @@ section.products {
 
 }
 
+
+
+/* Style the question container */
+.question-container {
+    margin-bottom: 20px;
+}
+
+/* Style the label */
+.question-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Style the input field */
+.question-container input[type="text"],
+.question-container input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Add some spacing for better readability */
+.question-container input[type="text"] {
+    margin-top: 5px;
+}
+
+/* Increase the height of the input field with type="number" */
+.question-container input[type="number"] {
+    height: 40px;
+}
+
+/* Add some padding to the top of the input fields */
+.question-container input[type="text"],
+.question-container input[type="number"] {
+    padding-top: 8px;
+    margin-left: 200px;
+}
+
+/* Responsive Styles */
+
+/* Adjust layout for smaller screens */
+@media screen and (max-width: 600px) {
+    .question-container input[type="text"],
+    .question-container input[type="number"] {
+        width: 100%;
+        margin-left: 0; /* Remove the left margin */
+    }
+}
+
 /* Contact Page styles */
 .contact-form {
     text-align: center;
@@ -364,3 +433,47 @@ section.products {
 .contact-form button:hover {
     background-color: #555;
 }
+
+/* Media Queries for Responsive Design */
+
+/* Tablets and larger */
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+    }
+
+    .product {
+        max-width: 250px;
+    }
+
+    .search-bar1 {
+        padding: 120px 0;
+    }
+
+    /* ... (other styles for tablets and larger screens) ... */
+}
+
+/* Laptops and larger */
+@media (min-width: 1024px) {
+    nav li {
+        margin-right: 30px;
+    }
+
+    .product {
+        max-width: 300px;
+    }
+
+    /* ... (other styles for laptops and larger screens) ... */
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+    nav {
+        padding: 0 50px;
+    }
+
+    /* ... (other styles for large screens) ... */
+}
+
+
+
